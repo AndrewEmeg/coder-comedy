@@ -48,7 +48,7 @@ body {
 .res-icon {
   font-size: 4rem;
   background: none;
-  color: #e7e7e7;
+  color: #0e3523;
   border: none;
   /* display: none; */
 
@@ -532,6 +532,7 @@ ul {
   }
   .mobile-nav .nav-link {
     font-size: 4rem;
+    color: #05120c;
   }
 
   .ionicon {

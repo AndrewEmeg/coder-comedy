@@ -15,14 +15,17 @@ function Header() {
   const [appear, setAppear] = useState("disappear");
   const [mobileNav, setMobileNav] = useState("");
   const [symbol, setSymbol] = useState("menu");
+  const [color, setColor] = useState("#e7e7e7");
   const handleToggle = () => {
     if (appear === "appear") {
       setAppear("disappear");
       setSymbol("menu");
+      setColor("#e7e7e7");
     } else {
       setAppear("appear");
       setMobileNav("mobile-nav");
       setSymbol("close-circle");
+      setColor("#0E3523");
     }
   };
   return (
@@ -77,7 +80,10 @@ function Header() {
         onClick={handleToggle}
         className="res-icon res-icon-menu disappear"
       >
-        <ion-icon name={`${symbol}-outline`}></ion-icon>
+        <ion-icon
+          style={{ color: `${color}` }}
+          name={`${symbol}-outline`}
+        ></ion-icon>
       </button>
       <button className="res-icon res-icon-x disappear">
         <ion-icon name="close-circle-outline"></ion-icon>
