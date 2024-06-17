@@ -494,9 +494,6 @@ ul {
   }
 }
 @media (max-width: 44em) {
-  html {
-    font-size: 35%;
-  }
   .about-section {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -555,11 +552,6 @@ ul {
   }
 }
 
-@media (max-width: 38em) {
-  html {
-    font-size: 30%;
-  }
-}
 @media (max-width: 28em) {
   .funny-jokes {
     grid-template-columns: 1fr;
