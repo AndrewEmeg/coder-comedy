@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* 
+COLORS:
+#0E3523
+#EA4A01
+#F6DFD4
+#FFFFFF
+#FFF4EF
+#05120C
+#E7E7E7
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik";
+}
+
+.App {
+  background-color: #f6dfd4;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4.8rem;
+  position: fixed;
+  z-index: 1000;
+  background-color: #e7e7e780;
+  width: 100%;
+}
+
+.header img {
+  /* width: 12rem; */
+  height: 7rem;
+}
+
+.header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.header li {
+  list-style: none;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.header li a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #05120c;
+  font-weight: 500;
+}
+
+.hero-section-big-div {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #fff 0%, #0000ff00 70%),
+    url("../public/images/hero-section-img2.1.jpg");
+  border: 2px solid red;
+  background-size: cover;
+  background-position-y: 100%;
+}
+
+.hero-section-big-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-text {
+  border: 2px solid green;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: center; */
+  padding: 0 0 0 4.8rem;
+}
+
+.hero-empty {
+  border: 2px solid blue;
+}
+
+.hero-description {
+  border: 2px solid red;
+  padding: 0 4.8rem;
+  height: 50rem;
+}
+
+.hero-headline {
+  font-size: 6.2rem;
+  font-weight: 900;
+}
+
+.hero-subheadline {
+  font-size: 3rem;
+}

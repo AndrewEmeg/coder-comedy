@@ -24,6 +24,8 @@ function App() {
   }
   return (
     <div className="App">
+      <Header />
+      <Hero />
       {/* <select value={amount} onChange={(e) => setAmount(e.target.value)}>
         {Array.from({ length: 5 }, (_, i) => i + 1).map((number) => (
           <option key={number}>{number}</option>
@@ -40,14 +42,77 @@ function App() {
 function Header() {
   return (
     <header className="header">
+      <img
+        // width="1254px"
+        // height="385px"
+        src="./images/logo.png"
+        alt=""
+        className="header-logo"
+      />
       <nav className="nav">
         <ul>
-          <li className="nav-element">Home</li>
-          <li className="nav-element">About</li>
-          <li className="nav-element">Developer</li>
+          <li className="nav-element">
+            <a
+              href="https://www.stripe.com"
+              className="nav-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Home
+            </a>
+          </li>
+          <li className="nav-element">
+            <a
+              href="https://www.stripe.com"
+              className="nav-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              About
+            </a>
+          </li>
+          <li className="nav-element">
+            <a
+              href="https://www.stripe.com"
+              className="nav-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Developer
+            </a>
+          </li>
+          <li className="nav-element">
+            <a
+              href="https://www.stripe.com"
+              className="header-cta"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Get a Joke!
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
+  );
+}
+
+function Hero() {
+  return (
+    <div className="hero-section-big-div">
+      <div className="hero-text">
+        <div className="hero-description">
+          <h1 className="hero-headline">
+            Laugh Your Bugs Away with CoderComedy!
+          </h1>
+          <p className="hero-subheadline">
+            The ultimate hub for programming jokes and tech humor. Get your
+            daily dose of laughter.
+          </p>
+        </div>
+      </div>
+      <div className="hero-empty"></div>
+    </div>
   );
 }
 export default App;
