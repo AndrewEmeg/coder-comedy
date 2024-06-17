@@ -45,32 +45,21 @@ function Header() {
             </a>
           </li>
           <li className="nav-element">
-            <a
-              href="https://www.stripe.com"
-              className="nav-link"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="#abt" className="nav-link">
               About
             </a>
           </li>
           <li className="nav-element">
             <a
-              href="https://www.stripe.com"
+              href="https://www.linkedin.com/in/andrewemeghebo"
               className="nav-link"
               target="_blank"
-              rel="noreferrer"
             >
               Developer
             </a>
           </li>
           <li className="nav-element">
-            <a
-              href="https://www.stripe.com"
-              className="header-cta"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="#genjoke" className="header-cta">
               Get a Joke!
             </a>
           </li>
@@ -105,12 +94,7 @@ function Hero() {
             The ultimate hub for programming jokes and tech humor. Get your
             daily dose of laughter.
           </p>
-          <a
-            href="https://www.stripe.com"
-            className="header-cta hero-cta"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="#genjoke" className="header-cta hero-cta">
             Get a Joke!
           </a>
         </div>
@@ -202,7 +186,7 @@ function GenerateJoke() {
     }
   }
   return (
-    <div className="generate-joke">
+    <div id="genjoke" className="generate-joke">
       <div className="container">
         <h2 className="heading-h2">{joke}</h2>
         <button className="get-joke" onClick={getJoke}>
@@ -215,7 +199,7 @@ function GenerateJoke() {
 
 function About() {
   return (
-    <div className="container about-section">
+    <div id="abt" className="container about-section">
       <div className="about-description">
         <h2 className="heading-h2">About</h2>
         <p className="about-paragraph">
