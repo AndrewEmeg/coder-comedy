@@ -12,6 +12,16 @@ function App() {
 }
 
 function Header() {
+  const [appear, setAppear] = useState("disappear");
+  const [mobileNav, setMobileNav] = useState("");
+  const handleToggle = () => {
+    if (appear === "appear") {
+      setAppear("disappear");
+    } else {
+      setAppear("appear");
+      setMobileNav("mobile-nav");
+    }
+  };
   return (
     <header className="header">
       <img
@@ -21,15 +31,10 @@ function Header() {
         alt=""
         className="header-logo"
       />
-      <nav className="nav">
+      <nav className={`nav ${mobileNav}`} id={`${appear}`}>
         <ul>
           <li className="nav-element">
-            <a
-              href="https://www.stripe.com"
-              className="nav-link"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="#tj" className="nav-link" target="_blank" rel="noreferrer">
               Home
             </a>
           </li>
@@ -65,6 +70,15 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <button
+        onClick={handleToggle}
+        className="res-icon res-icon-menu disappear"
+      >
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <button className="res-icon res-icon-x disappear">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </button>
     </header>
   );
 }
@@ -105,6 +119,7 @@ function AppOther() {
       <About />
       <Testimonial />
       <Form />
+      <Footer />
     </>
   );
 }
@@ -112,7 +127,9 @@ function AppOther() {
 function TopJokes() {
   return (
     <div className="container  jokes-featured">
-      <h2 className="heading-h2">Today's Top Jokes</h2>
+      <h2 className="heading-h2" id="tj">
+        Today's Top Jokes
+      </h2>
       <div className="funny-jokes">
         <div className="jokes-featured-card">
           <img
@@ -299,6 +316,104 @@ function Form() {
         </div>
       </div>
     </form>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="footer">
+      <div className="footer-container container">
+        <div className="footer-part-one">
+          <img src="./images/logo-white.png" alt="" className="footer-logo" />
+          <p className="social-invite">
+            Follow us on Facebook, Twitter, LinkedIn
+          </p>
+          <div className="footer-icon-div">
+            <a
+              href="https://www.linkedin.com/in/andrewemeghebo"
+              className="social-link"
+            >
+              <box-icon
+                type="logo"
+                name="linkedin"
+                className="social-link-individual bx-lg"
+              ></box-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/andrewemeghebo"
+              className="social-link"
+            >
+              <box-icon
+                type="logo"
+                name="instagram"
+                className="social-link-individual"
+              ></box-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/andrewemeghebo"
+              className="social-link"
+            >
+              <box-icon
+                type="logo"
+                name="twitter"
+                className="social-link-individual"
+              ></box-icon>
+            </a>
+          </div>
+          <p className="copyright">
+            Copyright: © 2024 CoderComedy. All rights reserved.
+          </p>
+        </div>
+
+        <div className="footer-part-two">
+          <h3 className="footer-h3">Quick Links</h3>
+          <div className="quick-links">
+            <p className="quick-paragraph">
+              <a
+                href="https://www.linkedin.com/in/andrewemeghebo"
+                className="quick-link"
+              >
+                Home
+              </a>
+            </p>
+            <p className="quick-paragraph">
+              <a
+                href="https://www.linkedin.com/in/andrewemeghebo"
+                className="quick-link"
+              >
+                About
+              </a>
+            </p>
+            <p className="quick-paragraph">
+              <a
+                href="https://www.linkedin.com/in/andrewemeghebo"
+                className="quick-link"
+              >
+                Developer
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="footer-part-three">
+          <h3 className="footer-h3">Contact Us</h3>
+          <div className="contacts">
+            <div className="contact">
+              <span>Email: </span>
+              <a href="mailto:info@codercomedy.com" className="contact-email">
+                info@codercomedy.com
+              </a>
+            </div>
+            <div className="contact">
+              <span>Phone: </span>
+              <a href="tel:(123) 456-7890" className="contact-phone">
+                (123) 456-7890
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
