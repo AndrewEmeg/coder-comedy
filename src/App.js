@@ -75,12 +75,21 @@ function Hero() {
       <div className="hero-text">
         <div className="hero-description">
           <h1 className="hero-headline">
-            Laugh Your Bugs Away with CoderComedy!
+            Laugh Your Bugs Away with <span className="span">Coder</span>
+            <span>Comedy!</span>
           </h1>
           <p className="hero-subheadline">
             The ultimate hub for programming jokes and tech humor. Get your
             daily dose of laughter.
           </p>
+          <a
+            href="https://www.stripe.com"
+            className="header-cta hero-cta"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Get a Joke!
+          </a>
         </div>
       </div>
       <div className="hero-empty"></div>
@@ -93,6 +102,9 @@ function AppOther() {
     <>
       <TopJokes />
       <GenerateJoke />
+      <About />
+      <Testimonial />
+      <Form />
     </>
   );
 }
@@ -166,13 +178,128 @@ function GenerateJoke() {
   return (
     <div className="generate-joke">
       <div className="container">
-        <h2 className="hero-subheadline">{joke}</h2>
+        <h2 className="heading-h2">{joke}</h2>
         <button className="get-joke" onClick={getJoke}>
-          Get Jokee!
+          Generate Jokee! 🤣🤣🤣
         </button>
-        <p>What's happening</p>
       </div>
     </div>
   );
 }
+
+function About() {
+  return (
+    <div className="container about-section">
+      <div className="about-description">
+        <h2 className="heading-h2">About</h2>
+        <p className="about-paragraph">
+          At CoderComedy, we believe that laughter is the best debugging tool.
+          Our mission is to bring joy and laughter to developers, tech
+          enthusiasts, and anyone who appreciates a good joke. Whether you’re
+          deep in code or just need a quick break, CoderComedy has the perfect
+          joke to brighten your day.
+        </p>
+      </div>
+      <div className="about-img-div">
+        <img
+          src="./images/pizza-people.jpg"
+          alt=""
+          className="about-img-actual"
+        />
+      </div>
+    </div>
+  );
+}
+
+function Testimonial() {
+  return (
+    <div className="testimonial container">
+      <h2 className="heading-h2">What are our users saying?</h2>
+      <div className="testimonial-cards">
+        <div className="testimony-card">
+          <img
+            src="./images/testimonial-2.jpg"
+            alt="A professional smiling so hard"
+            className="testimony-img"
+          />
+          <p className="testimony-paragraph">
+            "CoderComedy is my go-to for a quick laugh during work breaks. The
+            jokes are spot on!"
+          </p>
+          <p className="testimony-name">
+            - Sarah, <span>Flight Nurse.</span>
+          </p>
+        </div>
+        <div className="testimony-card">
+          <img
+            src="./images/testimonial-3.jpg"
+            alt="A professional smiling so hard"
+            className="testimony-img"
+          />
+          <p className="testimony-paragraph">
+            "As a tech enthusiast, I love how CoderComedy brings humor into the
+            coding world."
+          </p>
+          <p className="testimony-name">
+            - Lisa, <span>Software Engineer.</span>
+          </p>
+        </div>
+        <div className="testimony-card">
+          <img
+            src="./images/testimonial-1.jpg"
+            alt="A professional smiling so hard"
+            className="testimony-img"
+          />
+          <p className="testimony-paragraph">
+            "The perfect site for some light-hearted fun after a long day of
+            coding."
+          </p>
+          <p className="testimony-name">
+            - Mark, <span>IT Specialist.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Form() {
+  return (
+    <form className="container">
+      <div className="form">
+        <h2 className="heading-h2">
+          Stay Updated with Our Latest
+          <br /> Jokes.
+        </h2>
+        <p className="form-paragraph">
+          Subscribe to our newsletter and never miss a joke! Get the funniest
+          programming jokes delivered straight to your inbox.
+        </p>
+        <div className="inputs">
+          <label htmlFor="first-name">
+            <input
+              type="text"
+              name="first-name"
+              id="last-name"
+              placeholder="First Name"
+            />
+          </label>
+          <label htmlFor="last-name">
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+            />
+          </label>
+          <label htmlFor="email">
+            <input type="email" name="emaile" id="email" placeholder="Email" />
+          </label>
+          <button>Stay Updated</button>
+        </div>
+      </div>
+    </form>
+  );
+}
+
 export default App;
