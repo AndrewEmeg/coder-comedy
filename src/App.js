@@ -14,12 +14,15 @@ function App() {
 function Header() {
   const [appear, setAppear] = useState("disappear");
   const [mobileNav, setMobileNav] = useState("");
+  const [symbol, setSymbol] = useState("menu");
   const handleToggle = () => {
     if (appear === "appear") {
       setAppear("disappear");
+      setSymbol("menu");
     } else {
       setAppear("appear");
       setMobileNav("mobile-nav");
+      setSymbol("close-circle");
     }
   };
   return (
@@ -74,7 +77,7 @@ function Header() {
         onClick={handleToggle}
         className="res-icon res-icon-menu disappear"
       >
-        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name={`${symbol}-outline`}></ion-icon>
       </button>
       <button className="res-icon res-icon-x disappear">
         <ion-icon name="close-circle-outline"></ion-icon>

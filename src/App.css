@@ -145,7 +145,7 @@ ul {
 
 .hero-description {
   /* border: 2px solid red; */
-  padding-left: 12.8rem;
+  padding-left: 8rem;
   /* height: 50rem; */
   color: #e7e7e7;
 }
@@ -175,7 +175,7 @@ ul {
 }
 
 .hero-cta {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .app-other {
@@ -450,21 +450,53 @@ ul {
   /* text-decoration: none; */
 }
 
+@media (max-width: 82em) {
+  html {
+    font-size: 55%;
+  }
+  .hero-headline {
+    font-size: 5.4rem;
+  }
+
+  .hero-subheadline {
+    font-size: 2.4rem;
+  }
+
+  .hero-description .header-cta:link,
+  .hero-description .header-cta:visited {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 64em) {
   html {
     font-size: 50%;
+  }
+  .hero-headline {
+    font-size: 5.4rem;
+  }
+
+  .hero-subheadline {
+    font-size: 2.4rem;
+  }
+  .hero-section-big-div {
+    background-position-x: 60%;
+  }
+
+  .hero-description .header-cta:link,
+  .hero-description .header-cta:visited {
+    font-size: 3rem;
   }
 }
 @media (max-width: 50em) {
   html {
     font-size: 40%;
   }
-
-  .hero-section-big-div {
-    background-position-x: 60%;
-  }
 }
 @media (max-width: 44em) {
+  html {
+    font-size: 35%;
+  }
   .about-section {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -483,6 +515,9 @@ ul {
   }
   .res-icon-menu {
     display: block;
+    color: black;
+    z-index: 999;
+    font-size: 6rem;
   }
 
   .nav.mobile-nav {
@@ -518,4 +553,18 @@ ul {
   #disappear {
     display: none;
   }
+}
+
+@media (max-width: 38em) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 28em) {
+  .funny-jokes {
+    grid-template-columns: 1fr;
+  }
+}
+.testimonial-cards {
+  grid-template-columns: 1fr;
 }
