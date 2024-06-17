@@ -489,9 +489,9 @@ ul {
   }
 }
 @media (max-width: 50em) {
-  html {
+  /* html {
     font-size: 40%;
-  }
+  } */
 }
 @media (max-width: 44em) {
   .about-section {
@@ -504,9 +504,7 @@ ul {
   nav {
     display: none;
   }
-  /* .disappear {
-    display: block;
-  } */
+
   .res-icon-x {
     display: none;
   }
@@ -526,7 +524,6 @@ ul {
     top: 0;
     left: 0;
     padding: 8rem;
-    /* height: 10rem; */
   }
 
   .mobile-nav ul {
@@ -563,8 +560,6 @@ ul {
   .form h2 {
     font-size: 4.4;
     margin-bottom: 1.2rem;
-    /* background-color: #fff4ef;
-    padding: 5.8rem; */
   }
   .footer-container {
     grid-template-columns: 1fr;
@@ -574,13 +569,10 @@ ul {
   .hero-description {
     padding-left: 0;
   }
-}
-
-@media (max-width: 28em) {
   .funny-jokes {
     grid-template-columns: 1fr;
   }
-}
-.testimonial-cards {
-  grid-template-columns: 1fr;
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
 }
