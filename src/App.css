@@ -151,7 +151,7 @@ ul {
 }
 
 .hero-headline {
-  font-size: 6.8rem;
+  font-size: 6rem;
   font-weight: 900;
   margin-bottom: 2.4rem;
 }
@@ -175,7 +175,7 @@ ul {
 }
 
 .hero-cta {
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 .app-other {
@@ -398,7 +398,7 @@ ul {
 .footer-icon-div {
   display: flex;
   gap: 1.2rem;
-  padding-bottom: 12.8rem;
+  padding-bottom: 4rem;
 }
 
 .social-invite {
@@ -477,7 +477,7 @@ ul {
   }
 
   .hero-subheadline {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
   .hero-section-big-div {
     background-position-x: 60%;
@@ -510,7 +510,7 @@ ul {
   }
   .res-icon-menu {
     display: block;
-    color: black;
+    /* color: black; */
     z-index: 999;
     font-size: 6rem;
   }
@@ -529,11 +529,13 @@ ul {
   .mobile-nav ul {
     display: flex;
     flex-direction: column;
-    color: #05120c;
   }
   .mobile-nav .nav-link {
-    color: #05120c;
     font-size: 4rem;
+  }
+
+  .ionicon {
+    color: #e7e7e7;
   }
 
   .mobile-nav .header-cta {
@@ -574,5 +576,79 @@ ul {
   }
   .testimonial-cards {
     grid-template-columns: 1fr;
+  }
+
+  .hero-section-big-div {
+    background-image: linear-gradient(
+        to right bottom,
+        #05120c 0%,
+        #05120c92 80%
+      ),
+      url("../public/images/hero-section-img2.2.jpg");
+    /* background-image: url("../public/images/hero-section-img2.2.jpg"); */
+    /* border: 2px solid red; */
+    background-size: cover;
+    /* background-position-y: 100%; */
+    width: 100%;
+  }
+
+  .testimony-paragraph {
+    font-size: 2.8rem;
+  }
+
+  .footer-container {
+    row-gap: 8rem;
+  }
+
+  .footer h3 {
+    font-size: 2.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-icon-div {
+    padding-bottom: 0;
+  }
+
+  .hero-section-big-div {
+    grid-template-columns: 1fr;
+  }
+
+  .about-paragraph {
+    font-size: 2.8rem;
+    line-height: 1.5;
+  }
+
+  .jokes-featured-card-paragraph {
+    font-size: 2.8rem;
+    line-height: 1.4;
+  }
+
+  .hero-headline {
+    font-size: 5rem;
+  }
+
+  .hero-subheadline {
+    font-size: 2.8rem;
+  }
+  .hero-section-big-div {
+    background-position-x: 60%;
+  }
+
+  .hero-description .header-cta:link,
+  .hero-description .header-cta:visited {
+    font-size: 2.8rem;
+  }
+
+  .hero-section-big-div {
+    padding-top: 15rem;
+  }
+
+  .hero-text {
+    padding: 0px 0 0 3.8rem;
+  }
+
+  .generate-joke .heading-h2 {
+    font-size: 2.8rem;
+    line-height: 4.8rem;
   }
 }
