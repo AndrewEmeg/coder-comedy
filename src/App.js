@@ -363,9 +363,6 @@ function Footer() {
               ></box-icon>
             </a>
           </div>
-          <p className="copyright">
-            Copyright: © 2024 CoderComedy. All rights reserved.
-          </p>
         </div>
 
         <div className="footer-part-two">
@@ -415,6 +412,9 @@ function Footer() {
             </div>
           </div>
         </div>
+        <p className="copyright">
+          Copyright: © 2024 CoderComedy. All rights reserved.
+        </p>
       </div>
     </div>
   );
