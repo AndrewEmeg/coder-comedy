@@ -54,6 +54,7 @@ function Header() {
               href="https://www.linkedin.com/in/andrewemeghebo"
               className="nav-link"
               target="_blank"
+              rel="noreferrer"
             >
               Developer
             </a>
