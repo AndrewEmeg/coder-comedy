@@ -40,7 +40,7 @@ function Header() {
       <nav className={`nav ${mobileNav}`} id={`${appear}`}>
         <ul>
           <li className="nav-element">
-            <a href="#tj" className="nav-link" target="_blank" rel="noreferrer">
+            <a href="#home" className="nav-link">
               Home
             </a>
           </li>
@@ -84,7 +84,7 @@ function Header() {
 
 function Hero() {
   return (
-    <div className="hero-section-big-div">
+    <div id="home" className="hero-section-big-div">
       <div className="hero-text">
         <div className="hero-description">
           <h1 className="hero-headline">
@@ -360,18 +360,12 @@ function Footer() {
           <h3 className="footer-h3">Quick Links</h3>
           <div className="quick-links">
             <p className="quick-paragraph">
-              <a
-                href="https://www.linkedin.com/in/andrewemeghebo"
-                className="quick-link"
-              >
+              <a href="#home" className="quick-link">
                 Home
               </a>
             </p>
             <p className="quick-paragraph">
-              <a
-                href="https://www.linkedin.com/in/andrewemeghebo"
-                className="quick-link"
-              >
+              <a href="#abt" className="quick-link">
                 About
               </a>
             </p>
@@ -379,6 +373,8 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/andrewemeghebo"
                 className="quick-link"
+                target="_blank"
+                rel="noreferrer"
               >
                 Developer
               </a>
