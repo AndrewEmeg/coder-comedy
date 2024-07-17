@@ -9,7 +9,6 @@ COLORS:
 #FFF4EF
 #05120C
 #E7E7E7
-
 */
 
 * {
@@ -29,6 +28,10 @@ body {
 .App {
   background-color: #f6dfd4;
   position: relative;
+  background-image: url("../public/images/comedy-background.png");
+  background-repeat: repeat;
+  background-size: 20%;
+  backdrop-filter: gray;
 }
 
 .header {
