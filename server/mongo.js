@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
+
+const mongoURI = process.env.MONGO_URI;
+
 mongoose
-    .connect("mongodb://localhost:27017/coder-comedy", {
+    .connect(mongoURI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
@@ -22,5 +25,5 @@ module.exports = collection;
 
 // YMQEdc2XaJEA531N
 // andrewemeghebo2023
-const url =
-    "mongodb+srv://andrewemeghebo2023:YMQEdc2XaJEA531N@cluster0.fa3kl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// const url =
+//     "mongodb+srv://andrewemeghebo2023:YMQEdc2XaJEA531N@cluster0.fa3kl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
