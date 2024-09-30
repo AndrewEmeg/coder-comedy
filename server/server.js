@@ -1,6 +1,6 @@
-import express from "express";
-import collection from "./mongo";
-import cors from "cors";
+const cors = require("cors");
+const express = require("express");
+const collection = require("./mongo");
 
 const app = express();
 

@@ -19,6 +19,9 @@ const Form = () => {
             console.error(error);
             alert("Error submitting form");
         }
+        setFirstName("");
+        setLastName("");
+        setEmail("");
     };
 
     return (
