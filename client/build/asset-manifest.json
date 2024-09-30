@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2a5a1c3c.css",
+    "main.js": "/static/js/main.55651789.js",
+    "static/media/hero-section-img2.2.webp": "/static/media/hero-section-img2.2.1d3da6a12ae2881c8592.webp",
+    "static/media/comedy-background.png": "/static/media/comedy-background.e37dc22d513bbcec2fe7.png",
+    "index.html": "/index.html",
+    "main.2a5a1c3c.css.map": "/static/css/main.2a5a1c3c.css.map",
+    "main.55651789.js.map": "/static/js/main.55651789.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a5a1c3c.css",
+    "static/js/main.55651789.js"
+  ]
+}
